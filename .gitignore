@@ -1,0 +1,8 @@
+_Signature.pist
+source/*.popclipextz
+.DS_Store
+*.pyc
+.nova/
+node_modules/
+temp/
+scratch/

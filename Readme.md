@@ -1,23 +1,20 @@
-# ChatGPT
+# ChadSpelling
 
-Send the selected text to [ChatGPT](https://openai.com/blog/chatgpt), and append
-the response.
+Send the selected text to [ChatGPT](https://openai.com/blog/chatgpt), and gets you three of the most likely spellings back.
 
-Download:
-[ChatGPT.popclipextz](https://github.com/pilotmoon/PopClip-Extensions/raw/master/extensions/ChatGPT.popclipextz)
+It sends the folliwng prompt where `${input.text}` is the word you've selected.
+
+> Spell check: "${input.text}". What is the phonetically the most likely spellings? Only include words in the dictionary. Please give me three options, only include the answer in the response on one line with spaces in between
+
+This extention is based on [@pilotmoon ChatGPT.popclipextz](https://www.popclip.app/extensions/x/1g1Pz)
+
+## Download
+Go to [releases](https://github.com/mvaneijgen/ChadSpelling-PopClip/releases/) and download the latest released file `ChadSpelling.popclipext`.
 
 ## Description
 
-<img src="https://raw.githubusercontent.com/pilotmoon/PopClip-Extensions/master/source/ChatGPT.popclipext/ChatGPT-demo.gif" width="480px">
-
 The main action, **Chat**, sends the selected text to OpenAI's ChatGPT and
 appends the response as a new line.
-
-As a modifier, if you hold the Shift (⇧) key while invoking the action, the
-response will be copied to the clipboard instead of appended to the selection.
-
-The previous messages in the chat are sent along with each new message, allowing
-an extended dialogue with the AI.
 
 The **Reset** action (broom icon) clears the current chat history to start a
 fresh conversation.
@@ -44,14 +41,6 @@ reset. The default value is 15 minutes.
 
 Control whether or not to show the reset action in the popup.
 
-## About
-
-This is an extension for [PopClip](https://pilotmoon.com/popclip/).
-
-### Author
-
-Nick Moore
-
 ### Acknowledgements
 
 Icons:
@@ -62,21 +51,3 @@ Icons:
 ### Requirements
 
 Requires PopClip 2022.12 and an Open AI Platform account.
-
-### Links
-
-- [GitHub Source](https://github.com/pilotmoon/PopClip-Extensions/tree/master/source/ChatGPT.popclipext)
-
-## Changelog
-
-### 2023-03-03.1
-
-- Add configurable reset timer.
-
-### 2023-03-03
-
-- Initial release.
-
-### 2023-07-15
-
-- Add error message reporting instead of just an X.
