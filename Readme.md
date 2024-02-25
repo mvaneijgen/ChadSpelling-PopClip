@@ -4,7 +4,7 @@ Send the selected text to [ChatGPT](https://openai.com/blog/chatgpt), and gets y
 
 It sends the folliwng prompt where `${input.text}` is the word you've selected.
 
-> Spell check: "${input.text}". What is the phonetically the most likely spellings? Only include words in the dictionary. Please give me three options, only include the answer in the response on one line with spaces in between
+> Spell check: "${input.text}". What is phonetically the most likely spellings? Only include words in the dictionary. Please give me three options, only include the answer in the response on one line with spaces in between, no punctuation.
 
 This extention is based on [@pilotmoon ChatGPT.popclipextz](https://www.popclip.app/extensions/x/1g1Pz)
 

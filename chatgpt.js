@@ -30,7 +30,9 @@ const chat = async (input, options) => {
     }
   }
   // add the new message to the history
-  messages.push({ role: "user", content: `Spell check: "${input.text}". What is the phonetically the most likely spellings? Only include words in the dictionary. Please give me three options, only include the answer in the response on one line with spaces in between` });
+  messages.push({
+    role: "user", content: `Spell check: "${input.text}". What is phonetically the most likely spellings? Only include words in the dictionary. Please give me three options, only include the answer in the response on one line with spaces in between, no punctuation.`
+  });
   // send the whole message history to OpenAI
   try {
     const { data } = await openai.post("chat/completions", {
